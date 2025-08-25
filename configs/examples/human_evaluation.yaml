@@ -1,0 +1,39 @@
+# Human Evaluation Configuration
+experiment_name: "human_evaluation"
+description: "Human evaluation of authorship verification"
+
+# Dataset configuration
+dataset: "amazon_review"
+dataset_language: "german"
+prompt: "lip"  # Not used in human evaluation but kept for consistency
+prompt_language: "german"
+
+# Sampling configuration
+max_samples: 100  # Smaller sample for human evaluation
+random_seed: 42
+
+# Human evaluation specific
+evaluation_type: "human"
+
+# Metrics configuration
+metrics:
+  accuracy: true
+  precision: true
+  recall: true
+  f1_score: true
+  specificity: true
+  npv: true
+  tp: true
+  tn: true
+  fp: true
+  fn: true
+  confusion_matrix: true
+  token_usage: false  # Not applicable for human evaluation
+  costs: false       # Not applicable for human evaluation
+
+# Output configuration
+output_dir: "results"
+save_responses: true
+save_metrics: true
+save_costs: false
+save_csv: true

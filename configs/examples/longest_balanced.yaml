@@ -1,0 +1,16 @@
+# Longest Balanced Dataset Example
+dataset: "amazon_review"
+dataset_language: "german"
+prompt: "lip"
+prompt_language: "german"
+max_samples: 500
+random_seed: 42
+model: "openai/gpt-4.1-mini"
+
+# Custom data loading - use longest balanced examples
+data_loader: "longest_balanced"
+
+output_dir: "results/german_lip_longest_balanced"
+save_responses: true
+save_metrics: true
+save_costs: true

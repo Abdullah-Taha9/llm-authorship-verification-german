@@ -1,0 +1,56 @@
+# Authorship Verification Experiment Configuration
+
+# Experiment identification
+experiment_name: "german_lip_experiment"
+description: "German authorship verification with linguistic features prompt"
+
+# Dataset configuration
+dataset: "amazon_review"  # Options: "amazon_review", "wikipedia"
+dataset_language: "german"  # Options: "english", "german"
+
+# Prompt configuration  
+prompt: "lip"  # Options: "biased", "lip"
+prompt_language: "german"  # Options: "english", "german"
+
+# Sampling configuration
+max_samples: 2
+random_seed: 42
+
+# Model configuration
+model: "openai/gpt-4.1-mini"
+# Or any other available model, examples:
+# - "deepseek/deepseek-r1"
+# - "openai/gpt-4.1" 
+# - "openai/gpt-4o"
+# - "openai/gpt-4o-mini"
+# - "openai/gpt-4.1-mini"
+# - "deepseek/deepseek-v3"
+# - "openai/o3-mini"
+# - "openai/gpt-4.1-nano"
+
+# Optional: Custom data loading function
+# If not specified, uses default random sampling
+data_loader: null  # Options: null, "longest", "shortest", "longest_balanced", "shortest_balanced"
+
+# Metrics configuration - specify which metrics to calculate and save
+metrics:
+  accuracy: true
+  precision: true
+  recall: true
+  f1_score: true
+  specificity: true
+  npv: true  # Negative Predictive Value
+  tp: true   # True Positive
+  tn: true   # True Negative
+  fp: true   # False Positive
+  fn: true   # False Negative
+  confusion_matrix: true
+  token_usage: true
+  costs: true
+
+# Output configuration
+output_dir: "results"
+save_responses: true
+save_metrics: true
+save_costs: true
+save_csv: true

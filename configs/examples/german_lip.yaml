@@ -1,0 +1,12 @@
+# German LIP Experiment Configuration
+dataset: "amazon_review"
+dataset_language: "german"
+prompt: "lip"
+prompt_language: "german"
+max_samples: 500
+random_seed: 42
+model: "openai/gpt-4.1-mini"
+output_dir: "results/german_lip"
+save_responses: true
+save_metrics: true
+save_costs: true

@@ -1,0 +1,12 @@
+# English Biased Experiment Configuration
+dataset: "amazon_review"
+dataset_language: "english"
+prompt: "biased"
+prompt_language: "english"
+max_samples: 500
+random_seed: 42
+model: "openai/gpt-4o"
+output_dir: "results/english_biased"
+save_responses: true
+save_metrics: true
+save_costs: true
