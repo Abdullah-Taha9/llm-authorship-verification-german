@@ -34,14 +34,14 @@
 
 ## 📖 Overview
 
+This repository contains the implementation and evaluation framework for our ACL research paper investigating the capability of Large Language Models to perform authorship verification on German texts. We provide a comprehensive comparison between English and German performance across multiple state-of-the-art LLMs.
+
+**Authorship Verification (AV)** is the task of determining whether two given texts were written by the same author. While this has been extensively studied for English, limited work exists for German texts, particularly using modern LLMs.
+
 <div align="center">
   <img src="authorship_verification/assets/Authorship_Verification_Processing.png" alt="Authorship Verification Pipeline" style="width: 800px; margin: 20px 0;"/>
   <p><em>Figure 1: Authorship Verification Processing Pipeline</em></p>
 </div>
-
-This repository contains the implementation and evaluation framework for our ACL research paper investigating the capability of Large Language Models to perform authorship verification on German texts. We provide a comprehensive comparison between English and German performance across multiple state-of-the-art LLMs.
-
-**Authorship Verification (AV)** is the task of determining whether two given texts were written by the same author. While this has been extensively studied for English, limited work exists for German texts, particularly using modern LLMs.
 
 ### 🎯 Research Questions
 
@@ -401,5 +401,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <p>⭐ If you find this work useful, please consider giving us a star!</p>
-
 </div>
