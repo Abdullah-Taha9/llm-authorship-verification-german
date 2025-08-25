@@ -14,7 +14,7 @@
   <a href="#-citation">Citation</a>
 </p>
 
-[![Paper](https://img.shields.io/badge/📄_Paper-ACL_2024-red.svg)](https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing)
+[![Paper](https://img.shields.io/badge/📄_Paper-ACL_2025-red.svg)](https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tFVcYmw-phUb6gdIMiPHadVo2btFu5Ow?usp=sharing)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -402,4 +402,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>⭐ If you find this work useful, please consider giving us a star!</p>
 </div>
+
 
