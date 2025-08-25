@@ -25,7 +25,7 @@
   <a href="mailto:nitish.devranii@utn.de">Nitish Devrani</a> •
   <a href="mailto:timothy.leonard@utn.de">Timothy Leonard</a><br>
   <em>Department of Computer Science & Artificial Intelligence<br>
-  University of Technology Nurnberg (UTN)</em>
+  University of Technology Nuremberg (UTN)</em>
 </p>
 
 </div>
@@ -402,5 +402,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>⭐ If you find this work useful, please consider giving us a star!</p>
 </div>
+
 
 
