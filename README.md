@@ -11,10 +11,11 @@
   <a href="#-quick-start">Quick Start</a> •
   <a href="#-experiments">Experiments</a> •
   <a href="#-results">Results</a> •
+  <a href="#-Future-Work">Future Work</a>
   <a href="#-citation">Citation</a>
 </p>
 
-[![Paper](https://img.shields.io/badge/📄_Paper-ACL_2025-red.svg)](https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing)
+[![Paper](https://img.shields.io/badge/📄_Paper-Project-green.svg)](https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tFVcYmw-phUb6gdIMiPHadVo2btFu5Ow?usp=sharing)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -34,7 +35,7 @@
 
 ## 📖 Overview
 
-This repository contains the implementation and evaluation framework for our ACL research paper investigating the capability of Large Language Models to perform authorship verification on German texts. We provide a comprehensive comparison between English and German performance across multiple state-of-the-art LLMs.
+This repository contains the implementation and evaluation framework for our master’s course research investigating the capability of Large Language Models to perform authorship verification on German texts. We provide a comprehensive comparison between English and German performance across multiple state-of-the-art LLMs.
 
 **Authorship Verification (AV)** is the task of determining whether two given texts were written by the same author. While this has been extensively studied for English, limited work exists for German texts, particularly using modern LLMs.
 
@@ -324,6 +325,16 @@ jupyter notebook notebooks/results_analysis.ipynb
 
 ---
 
+## 🔮 Future Work
+
+Looking ahead, our approach could be extended to **additional languages**. We expect performance will deteriorate for **less common or low-resource languages** — particularly those underrepresented or absent during pre-training.  
+
+An important open question is whether LLMs can still outperform random guessing in such cases, possibly by leveraging **subtle cues** such as punctuation or formatting.  
+
+A promising direction is to evaluate on datasets like the **Million Author Corpus (MAC)**, which includes **low-resource languages** such as Malagasy and Swahili. This would provide an excellent testbed for advancing authorship verification beyond high-resource languages like English and German.  
+
+---
+
 ## Project Structure
 
 ```
@@ -393,11 +404,12 @@ self.model_costs = {
 If you use this code or data in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{al-labani-Devrani-Leonard-2025-german-av,
+@misc{al-labani-Devrani-Leonard-2025-german-av,
   title={Are Large Language Models capable of Authorship Verification on German Texts?},
   author={Al-Labani, Abdullah and Devrani, Nitish and Leonard, Timothy},
   year={2025},
-  url={https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing}
+  url={https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing},
+  note={Master’s course research project, not peer-reviewed}
 }
 ```
 
@@ -411,7 +423,6 @@ We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.
 
 - 🐛 **Bug reports**: Please use the [issue tracker](../../issues)
 - 💡 **Feature requests**: Open an issue with the `enhancement` label
-- ❓ **Questions**: Use the [discussions](../../discussions) section
 
 ---
 
@@ -431,3 +442,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>⭐ If you find this work useful, please consider giving us a star!</p>
 </div>
+
