@@ -155,14 +155,45 @@ Cost: $0.0010
 #### 1. Biased Prompt
 Simple, direct prompting that may introduce bias:
 ```
-Do these two texts have the same author? Answer with 'yes' or 'no'.
+You’re a product‐review linguist on a shopping dataset. Texts are casual, everyday reviews. Decide if two texts share an author, based purely on writing style.
+
+Return JSON with
+- " analysis": Reasoning behind your answer.
+- "answer": A boolean (True/False).
+
+Keep your analysis ≤ 10 words, bullet-point style (comma-separated is fine).
+
+Example 1:
+Text A: “They lacked any kind of moisture: wouldn’t stay in my face they were so dry! Returning if possible!”
+Text B: “Just as pictured. Prompt delivery. Yummmm”
+analysis: “same casual contractions”
+answer: true
+
+Example 2:
+Text A: “The box came really damaged. I got it for a gift and I am embarrassed to give it to him.”
+Text B: “Had to do some fabrication but it works. Not perfect or really flush but it gets the job done. You get what you pay for!”
+analysis: “– emotive first-person  – technical, task-focused tone another person”
+answer: false
+
+Now your turn:
+Text 1: {text1}
+Text 2: {text2}
 ```
 
 #### 2. LIP (Linguistic Features) Prompt
 Encourages analysis of linguistic features:
 ```
-Analyze the writing style, vocabulary, sentence structure, and other linguistic 
-features to determine if these texts were written by the same author.
+Respond only with a single JSON object including three key elements.
+- " analysis": Reasoning behind your answer in few words.
+- "answer": A boolean (True/False) answer.
+- “score": A number between 0.0 and 1.0, where 0.0 = certain different author, 1.0 = certain same author, and values in between reflect degree of certainty (e.g., 0.9 = almost certain same, 0.1 = almost certain different).
+
+Ensure that "answer" matches: use True if score ≥ 0.5, False if score < 0.5.
+
+Task: Verify if two input texts were written by the same author. Analyze the writing styles of the input texts, disregarding the differences in topic and content. Reasoning based on linguistic features such as phrasal verbs, modal verbs, punctuation, rare words, affixes, quantities, humor, sarcasm, typographical errors, and misspellings.
+
+Text 1: {text1}
+Text 2: {text2}
 ```
 
 ### Datasets
@@ -316,7 +347,6 @@ llm-authorship-verification-german/
 │   └── {language}_{prompt}_{data_loader}_{model}/
 ├── notebooks/                 # Analysis notebooks
 │   └── results_analysis.ipynb
-├── .env.example              # Environment variables template
 ├── .gitignore               # Git ignore rules
 ├── requirements.txt         # Python dependencies
 ├── test_setup.py           # Setup verification script
@@ -394,7 +424,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **Amazon Review Dataset**: Thanks to the creators of the multilingual authorship verification dataset
-- **OpenAI & DeepSeek**: For providing access to their language models
 - **Community**: All contributors and researchers working on authorship verification
 
 ---
@@ -402,6 +431,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>⭐ If you find this work useful, please consider giving us a star!</p>
 </div>
-
-
-
