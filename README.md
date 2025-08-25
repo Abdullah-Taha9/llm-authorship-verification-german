@@ -14,8 +14,8 @@
   <a href="#-citation">Citation</a>
 </p>
 
-[![Paper](https://img.shields.io/badge/📄_Paper-ACL_2024-red.svg)](https://your-paper-url-here)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/your-notebook-url-here)
+[![Paper](https://img.shields.io/badge/📄_Paper-ACL_2024-red.svg)](https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1tFVcYmw-phUb6gdIMiPHadVo2btFu5Ow?usp=sharing)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -361,13 +361,11 @@ self.model_costs = {
 If you use this code or data in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{al-labani-etal-2024-german-av,
+@inproceedings{al-labani-Devrani-Leonard-2025-german-av,
   title={Are Large Language Models capable of Authorship Verification on German Texts?},
   author={Al-Labani, Abdullah and Devrani, Nitish and Leonard, Timothy},
-  booktitle={Proceedings of the Association for Computational Linguistics (ACL)},
-  year={2024},
-  publisher={Association for Computational Linguistics},
-  url={https://your-paper-url-here}
+  year={2025},
+  url={https://drive.google.com/file/d/1zThZfLRd4PrjS1kh7UAflooVfN6Z4DLM/view?usp=sharing}
 }
 ```
 
