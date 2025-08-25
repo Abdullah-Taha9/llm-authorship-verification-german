@@ -38,11 +38,6 @@ This repository contains the implementation and evaluation framework for our ACL
 
 **Authorship Verification (AV)** is the task of determining whether two given texts were written by the same author. While this has been extensively studied for English, limited work exists for German texts, particularly using modern LLMs.
 
-<div align="center">
-  <img src="authorship_verification/assets/Authorship_Verification_Processing.png" alt="Authorship Verification Pipeline" style="width: 800px; margin: 20px 0;"/>
-  <p><em>Figure 1: Authorship Verification Processing Pipeline</em></p>
-</div>
-
 ### 🎯 Research Questions
 
 - **RQ1**: How well do LLMs perform on German authorship verification compared to English?
@@ -58,6 +53,13 @@ This repository contains the implementation and evaluation framework for our ACL
 - **Human Evaluation**: GUI-based human annotation system with comparative analysis
 - **Reproducible Framework**: Clean, configurable codebase for easy reproduction and extension
 
+
+<div align="center">
+  <img src="authorship_verification/assets/Authorship_Verification_Processing.png" alt="Authorship Verification Pipeline" style="width: 800px; margin: 20px 0;"/>
+  <p><em>Figure 1: Authorship Verification Processing Pipeline</em></p>
+</div>
+
+
 ---
 
 ## 🚀 Quick Start
@@ -67,7 +69,7 @@ This repository contains the implementation and evaluation framework for our ACL
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd llm-authorship-verification-german/AV
+cd llm-authorship-verification-german
 
 # Install dependencies
 pip install -r requirements.txt
@@ -291,10 +293,10 @@ jupyter notebook notebooks/results_analysis.ipynb
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-AV/
+llm-authorship-verification-german/
 ├── configs/                    # Configuration files
 │   ├── experiment.yaml        # Main configuration template
 │   └── examples/              # Example configurations
@@ -400,3 +402,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>⭐ If you find this work useful, please consider giving us a star!</p>
 </div>
+
