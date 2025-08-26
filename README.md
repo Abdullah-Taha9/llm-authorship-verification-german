@@ -277,9 +277,12 @@ save_csv: true
 ### Advanced Usage
 
 #### Run Multiple Experiments
+Run all experiments under 'configs/examples':
 ```bash
 python authorship_verification/batch_runner.py
 ```
+
+Caution: This might be costly, so double-check experiment settings before you run!
 
 #### Human Evaluation
 ```bash
