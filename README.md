@@ -283,7 +283,7 @@ python authorship_verification/batch_runner.py
 
 #### Human Evaluation
 ```bash
-python authorship_verification/human_evaluation.py --config configs/examples/human_evaluation.yaml
+python authorship_verification/human_evaluation.py --config configs/human_evaluation.yaml
 ```
 
 #### Analyze Results
