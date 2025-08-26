@@ -1,0 +1,31 @@
+# configs/mac_german_lip.yaml
+experiment_name: "mac_german_lip"
+dataset: "mac"
+dataset_language: "german"        # or "de"
+mac_root_dir: "/home/tylerich/work/UTN_4/SS 25/authorship-verification/pipeline/wikipedia_1M_author_corpus_v1.2"   # path where you extracted MAC
+mac_split: "train"                 # "train" | "dev" | "test"
+
+prompt: "lip"
+prompt_language: "german"
+
+max_samples: 2                   # pick your sample size
+random_seed: 42
+
+model: "openai/gpt-4.1-mini"      # any key from your pricing dict
+output_dir: "results/mac_runs"
+
+# bookkeeping
+save_responses: true
+save_metrics: true
+save_costs: true
+
+# optional: choose which metrics to compute
+metrics:
+  accuracy: true
+  precision: true
+  recall: true
+  f1_score: true
+  specificity: true
+  npv: true
+  token_usage: true
+  costs: true
