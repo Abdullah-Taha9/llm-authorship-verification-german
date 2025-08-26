@@ -2,7 +2,7 @@
 experiment_name: "mac_german_lip"
 dataset: "mac"
 dataset_language: "german"        # or "de"
-mac_root_dir: "/home/tylerich/work/UTN_4/SS 25/authorship-verification/pipeline/wikipedia_1M_author_corpus_v1.2"   # path where you extracted MAC
+mac_root_dir: "/path/to/wikipedia_1M_author_corpus_v1.2"   # path where you extracted MAC
 mac_split: "train"                 # "train" | "dev" | "test"
 
 prompt: "lip"
