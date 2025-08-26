@@ -200,7 +200,7 @@ Text 2: {text2}
 ### Datasets
 
 - **Amazon Reviews**: German/English product reviews from the authorship verification dataset
-- **Wikipedia**: Planned support for Wikipedia articles (future work)
+- **Wikipedia**: MAC dataset support (See below)
 
 ### Data Loading Strategies
 
@@ -401,6 +401,36 @@ self.model_costs = {
 3. Add example configuration
 
 ---
+
+### Million Author Corpus (MAC)
+
+We also support the [MAC dataset](https://huggingface.co/datasets/Blablablab/MAC) for German and English Wikipedia texts.
+
+#### Download & Setup
+
+1. Download the dataset archive from Hugging Face:
+   [https://huggingface.co/datasets/Blablablab/MAC](https://huggingface.co/datasets/Blablablab/MAC)
+
+2. Extract it so the folder structure looks like this:
+```
+wikipedia_1M_author_corpus_v1.2/
+├── german/de_wikipedia/
+│ ├── train_queries.jsonl.gz
+│ ├── train_candidates.jsonl.gz
+│ ├── dev_queries.jsonl.gz
+│ ├── dev_candidates.jsonl.gz
+│ └── test_*.jsonl.gz
+└── english/en_wikipedia/
+├── train_queries.jsonl.gz
+├── train_candidates.jsonl.gz
+└── ...
+```
+
+3. By default, we expect the folder to be named `wikipedia_1M_author_corpus_v1.2` and placed in the project root.  
+If you put it elsewhere, set `mac_root_dir` in your config YAML (See 'configs/examples/mac_german_lip.yaml' for an example)
+
+
+
 
 ## 📝 Citation
 
